@@ -11,7 +11,7 @@ We have implemented the Spring MVC approach.
 
 Technologies used :
 
-1. HTML, CSS, Bootstrap, JavaScript, Ajax, JSON.
+1. HTML, CSS, JSP, Bootstrap, JavaScript, Ajax, JSON.
 2. Enterprise Java (J2EE). (Spring MVC).
 3. Hibernate ORM.
 4. MySQL WorkBench.
