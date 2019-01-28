@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE tiles-definitions PUBLIC
+      "-//Apache Software Foundation//DTD Tiles Configuration 3.0//EN" 
+      "http://tiles.apache.org/dtds/tiles-config_3_0.dtd">
+<tiles-definitions>
+    <definition name="base.definition"
+        template="Layout.jsp">
+        <put-attribute name="title" value="" />
+        <put-attribute name="header" value="/Header.jsp" />
+      <put-attribute name="menu" value="" />
+        <put-attribute name="body" value="" />
+        <put-attribute name="footer" value="/Footer.jsp" />
+    </definition>
+ 
+    <definition name="home.definition" extends="base.definition">
+    <put-attribute name="menu" value="/Menu.jsp" />
+        <put-attribute name="title" value="home" />
+        <put-attribute name="body" value="/index.jsp" />
+    </definition>
+    
+       <definition name="sector.definition" extends="base.definition">
+       <put-attribute name="menu" value="/Menu.jsp" />
+        <put-attribute name="title" value="sector" />
+        <put-attribute name="body" value="/sector.jsp" />
+    </definition>
+       <definition name="product.definition" extends="base.definition">
+       <put-attribute name="menu" value="/Menu.jsp" />
+        <put-attribute name="title" value="product" />
+        <put-attribute name="body" value="/product.jsp" />
+    </definition>
+     
+       <definition name="subsector.definition" extends="base.definition">
+       <put-attribute name="menu" value="/Menu.jsp" />
+        <put-attribute name="title" value="sub sector" />
+        <put-attribute name="body" value="/subsector.jsp" />
+    </definition>
+    
+    <definition name="Itinerary.definition" extends="base.definition">
+    <put-attribute name="menu" value="/Menu.jsp" />
+        <put-attribute name="title" value="Itinerary" />
+        <put-attribute name="body" value="/Itinerary.jsp" />
+    </definition>
+    
+     <definition name="booktour.definition" extends="base.definition">
+        <put-attribute name="title" value="booking page" />
+        <put-attribute name="body" value="/booktour.jsp" />
+         <put-attribute name="menu" value="/menulogut.jsp" />
+    </definition>
+    
+     <definition name="pay.definition" extends="base.definition">
+     
+     <put-attribute name="menu" value="/menulogut.jsp" />
+        <put-attribute name="title" value="booking page" />
+        <put-attribute name="body" value="/pay.jsp" />
+    </definition>
+    
+     <definition name="signup.definition" extends="base.definition">
+     <put-attribute name="menu" value="/Menu.jsp" />
+        <put-attribute name="title" value="signup page" />
+        <put-attribute name="body" value="/signup.jsp" />
+    </definition>
+    
+    <definition name="search.definition" extends="base.definition">
+    <put-attribute name="menu" value="/Menu.jsp" />
+        <put-attribute name="title" value="search page" />
+        <put-attribute name="body" value="/search.jsp" />
+    </definition>
+    
+     <definition name="login.definition" extends="base.definition">
+     <put-attribute name="menu" value="/Menu.jsp" />
+        <put-attribute name="title" value="login page" />
+        <put-attribute name="body" value="/login.jsp" />
+    </definition>
+    
+      <definition name="cost.definition" extends="base.definition">
+      <put-attribute name="menu" value="/Menu.jsp" />
+        <put-attribute name="title" value="login page" />
+        <put-attribute name="body" value="/cost.jsp" />
+    </definition>
+    
+    <definition name="date.definition" extends="base.definition">
+    <put-attribute name="menu" value="/Menu.jsp" />
+        <put-attribute name="title" value="login page" />
+        <put-attribute name="body" value="/date.jsp" />
+    </definition>
+</tiles-definitions>
+
+
+
+
+
+
+
