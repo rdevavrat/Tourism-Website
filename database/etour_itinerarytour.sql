@@ -1,0 +1,55 @@
+-- MySQL dump 10.13  Distrib 5.7.12, for Win32 (AMD64)
+--
+-- Host: localhost    Database: etour
+-- ------------------------------------------------------
+-- Server version	5.1.38-community
+
+/*!40101 SET @OLD_CHARACTER_SET_CLIENT=@@CHARACTER_SET_CLIENT */;
+/*!40101 SET @OLD_CHARACTER_SET_RESULTS=@@CHARACTER_SET_RESULTS */;
+/*!40101 SET @OLD_COLLATION_CONNECTION=@@COLLATION_CONNECTION */;
+/*!40101 SET NAMES utf8 */;
+/*!40103 SET @OLD_TIME_ZONE=@@TIME_ZONE */;
+/*!40103 SET TIME_ZONE='+00:00' */;
+/*!40014 SET @OLD_UNIQUE_CHECKS=@@UNIQUE_CHECKS, UNIQUE_CHECKS=0 */;
+/*!40014 SET @OLD_FOREIGN_KEY_CHECKS=@@FOREIGN_KEY_CHECKS, FOREIGN_KEY_CHECKS=0 */;
+/*!40101 SET @OLD_SQL_MODE=@@SQL_MODE, SQL_MODE='NO_AUTO_VALUE_ON_ZERO' */;
+/*!40111 SET @OLD_SQL_NOTES=@@SQL_NOTES, SQL_NOTES=0 */;
+
+--
+-- Table structure for table `itinerarytour`
+--
+
+DROP TABLE IF EXISTS `itinerarytour`;
+/*!40101 SET @saved_cs_client     = @@character_set_client */;
+/*!40101 SET character_set_client = utf8 */;
+CREATE TABLE `itinerarytour` (
+  `tourref_tourid` int(11) DEFAULT NULL,
+  `itineraryid` int(11) NOT NULL,
+  PRIMARY KEY (`itineraryid`),
+  KEY `FKEF82BDE31CDF388` (`itineraryid`),
+  KEY `FKEF82BDE3F32FE3D8` (`tourref_tourid`),
+  CONSTRAINT `FKEF82BDE31CDF388` FOREIGN KEY (`itineraryid`) REFERENCES `itinerary` (`itineraryid`),
+  CONSTRAINT `FKEF82BDE3F32FE3D8` FOREIGN KEY (`tourref_tourid`) REFERENCES `tour` (`tourid`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+/*!40101 SET character_set_client = @saved_cs_client */;
+
+--
+-- Dumping data for table `itinerarytour`
+--
+
+LOCK TABLES `itinerarytour` WRITE;
+/*!40000 ALTER TABLE `itinerarytour` DISABLE KEYS */;
+INSERT INTO `itinerarytour` VALUES (1,1),(1,2),(1,3),(1,4),(1,5),(2,6),(2,7),(2,8),(2,9),(2,10),(3,11),(3,12),(3,13),(3,14),(4,15),(4,16),(4,17),(4,18),(4,19),(5,20),(5,21),(5,22),(5,23),(6,24),(6,25),(6,26),(6,27),(7,28),(7,29),(7,30),(8,31),(8,32),(8,33),(9,34),(9,35),(9,36),(10,37),(10,38),(11,39),(11,40),(12,41),(12,42),(13,43),(13,44),(14,45),(14,46),(15,47),(15,48),(16,49),(16,50),(17,51),(17,52),(18,53),(18,54),(19,55),(19,56),(20,57),(20,58),(21,59),(21,60),(22,61),(22,62),(23,63),(23,64),(24,65),(24,66),(25,67),(25,68),(25,69),(26,70),(26,71),(26,72),(27,73),(27,74),(28,75),(28,76),(29,77),(29,78),(30,79),(30,80),(30,81),(30,82),(30,83),(31,84),(31,85),(31,86),(31,87),(31,88),(32,89),(32,90),(32,91),(32,92),(32,93),(33,94),(33,95),(33,96),(33,97),(34,98),(34,99),(34,100),(34,101),(35,102),(35,103),(35,104),(35,105),(36,106),(36,107),(36,108),(36,109),(37,110),(37,111),(37,112),(38,113),(38,114),(38,115),(39,116),(39,117),(40,118),(40,119),(40,120),(41,121),(41,122),(41,123),(41,124),(41,125),(42,126),(42,127),(42,128),(43,129),(43,130),(43,131),(43,132),(44,133),(44,134),(44,135),(44,136),(45,137),(45,138),(45,139),(45,140),(45,141),(45,142),(46,143),(46,144),(46,145),(46,146),(47,147),(47,148),(47,149),(47,150),(47,151),(47,152),(48,153),(48,154),(48,155),(48,156),(48,157),(48,158),(48,159),(48,160),(48,161),(49,162),(49,163),(49,164),(49,165),(50,166),(50,167),(50,168),(51,169),(51,170),(51,171),(52,172),(52,173),(52,174),(53,175),(53,176),(54,177),(54,178),(54,179),(54,180),(55,181),(55,182),(55,183),(55,184),(55,185),(55,186),(55,187),(56,188),(56,189),(57,190),(57,191);
+/*!40000 ALTER TABLE `itinerarytour` ENABLE KEYS */;
+UNLOCK TABLES;
+/*!40103 SET TIME_ZONE=@OLD_TIME_ZONE */;
+
+/*!40101 SET SQL_MODE=@OLD_SQL_MODE */;
+/*!40014 SET FOREIGN_KEY_CHECKS=@OLD_FOREIGN_KEY_CHECKS */;
+/*!40014 SET UNIQUE_CHECKS=@OLD_UNIQUE_CHECKS */;
+/*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
+/*!40101 SET CHARACTER_SET_RESULTS=@OLD_CHARACTER_SET_RESULTS */;
+/*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
+/*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
+
+-- Dump completed on 2018-01-31 12:19:01
